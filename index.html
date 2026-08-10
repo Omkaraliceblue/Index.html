@@ -313,9 +313,9 @@
 /* RIGHT SECTION */
 .login-right{
     width:270px;
-    max-width: 100%;
-    flex: 1;
-    min-width: 220px;
+    max-width:100%;
+    flex:1;
+    min-width:220px;
     text-align:center;
 }
 
@@ -326,19 +326,45 @@
     margin-bottom:24px;
 }
 
+
+/* CTA BUTTONS */
+.login-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    width:100%;
+}
+
+
+/* INDIVIDUAL BUTTONS */
 .btn-primary{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    width:230px;
-    max-width: 100%;
+
+    width:130px;
     height:54px;
+
+    padding:0 12px;
+
     background:#1768F5;
     color:#fff;
+
     text-decoration:none;
     border-radius:40px;
-    font-size:20px;
+
+    font-size:13px;
     font-weight:600;
+
+    white-space:nowrap;
+    box-sizing:border-box;
+}
+
+
+/* HOVER */
+.btn-primary:hover{
+    background:#005BEA;
 }
 
   /* SECURITY WARNING */
@@ -942,14 +968,14 @@
 
     </div>
 
-    <div class="login-right">
-
-        <div class="secure-note">
-            Your account is secure with us
-        </div>
+    <div class="login-buttons">
 
         <a href="https://ant.aliceblueonline.com/" class="btn-primary">
-            Login to ANT
+            Login on Web
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.ant2o.aliceblue&hl=en_IN" class="btn-primary">
+            Login on Mobi
         </a>
 
     </div>
