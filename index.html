@@ -164,52 +164,54 @@
 }
 
 /* LOGIN CARD */
-
 .login-card{
     background:#F8FAFF;
     border:1px solid #D5DCE8;
     border-radius:18px;
+
     padding:28px 34px;
-    margin:14px;
+    margin:24px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
-    flex-wrap: wrap;
-    gap: 14px;
+
+    box-sizing:border-box;
 }
+
 
 /* LEFT SECTION */
 .login-left{
     flex:1;
-    min-width:400px;
     padding-right:40px;
+
     border-right:1px solid #D5DCE8;
+
+    min-width:0;
 }
+
 
 /* ICON + TITLE */
 .login-header{
     display:flex;
     align-items:center;
     gap:18px;
+
     margin-bottom:28px;
-    flex-wrap: wrap;
 }
 
 .avatar-icon{
     width:48px;
     height:48px;
+
     border-radius:50%;
     background:#DCEAFF;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink: 0;
-}
 
-.avatar-icon svg{
-    width:24px;
-    height:24px;
-    display:block;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
 }
 
 .login-title{
@@ -218,13 +220,12 @@
     color:#111827;
 }
 
-/* LOGIN DETAILS */
 
+/* USER ID + PASSWORD */
 .login-details{
     display:flex;
     align-items:center;
-    gap:10px;
-    flex-wrap: wrap;
+    gap:18px;
 }
 
 .login-item{
@@ -235,130 +236,109 @@
 .login-label{
     font-size:14px;
     color:#8A8F98;
+
     margin-bottom:6px;
 }
 
 .login-value{
     font-size:20px;
     font-weight:600;
-    word-break: break-word;
 }
 
 .login-value.link{
     color:#005BEA;
 }
 
-/* COPY ICON */
 
+/* COPY ICON */
 .copy-icon{
-    width:24px;
-    height:24px;
     display:flex;
     align-items:center;
-    justify-content:center;
-    margin-top:20px;
-    cursor:pointer;
+
+    margin-top:18px;
+
     flex-shrink:0;
 }
 
-.copy-icon svg{
-    width:22px;
-    height:22px;
-    display:block;
-}
-
-.copy-icon svg rect{
-    stroke:#005BEA;
-    fill:none;
-}
 
 /* PASSWORD */
-
 .password{
     padding-left:18px;
+
     border-left:1px solid #D5DCE8;
 }
 
-/* PASSWORD LINK */
-
-.password-link{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    color:#005BEA;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:600;
-    line-height:1.2;
-    flex-wrap: wrap;
-}
-
-.password-link:hover{
-    text-decoration:none;
-}
-
-.password-link span{
-    display:block;
-}
-
-.password-link svg{
-    width:20px;
-    height:20px;
-    display:block;
-    flex-shrink:0;
-    stroke:#005BEA;
-}
 
 /* RIGHT SECTION */
 .login-right{
-    width:270px;
-    max-width:100%;
-    flex:1;
-    min-width:220px;
+    width:300px;
+    max-width:300px;
+
+    flex:0 0 300px;
+
+    min-width:300px;
+
     text-align:center;
+
+    margin-left:auto;
 }
 
+
+/* SECURE NOTE */
 .secure-note{
     font-size:18px;
     color:#9A9FA8;
+
     font-weight:500;
-    margin-bottom:24px;
+
+    margin:0 0 24px;
 }
 
 
 /* CTA BUTTONS */
 .login-buttons{
     display:flex;
+
     align-items:center;
     justify-content:center;
+
+    flex-wrap:nowrap;
+
     gap:12px;
+
     width:100%;
 }
 
 
-/* INDIVIDUAL BUTTONS */
+/* INDIVIDUAL BUTTON */
 .btn-primary{
     display:inline-flex;
+
     align-items:center;
     justify-content:center;
 
     width:130px;
+    min-width:130px;
+
     height:54px;
 
-    padding:0 12px;
+    padding:0 10px;
 
     background:#1768F5;
     color:#fff;
 
     text-decoration:none;
+
     border-radius:40px;
 
     font-size:13px;
     font-weight:600;
 
     white-space:nowrap;
+
     box-sizing:border-box;
+
+    flex-shrink:0;
 }
 
 
@@ -891,8 +871,13 @@
 
             <div class="avatar-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="8" r="4" stroke="#005BEA" stroke-width="2"/>
-                    <path d="M4 20c0-4 3.5-6 8-6s8 2 8 6" stroke="#005BEA" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="8" r="4"
+                        stroke="#005BEA"
+                        stroke-width="2"/>
+                    <path d="M4 20c0-4 3.5-6 8-6s8 2 8 6"
+                        stroke="#005BEA"
+                        stroke-width="2"
+                        stroke-linecap="round"/>
                 </svg>
             </div>
 
@@ -902,81 +887,74 @@
 
         </div>
 
+
         <div class="login-details">
 
             <div class="login-item">
-                <div class="login-label">User ID</div>
-                <div class="login-value link">23234235</div>
+
+                <div class="login-label">
+                    User ID
+                </div>
+
+                <div class="login-value link">
+                    23234235
+                </div>
+
             </div>
+
 
             <div class="copy-icon">
 
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                    <rect
-                        x="8"
-                        y="3"
-                        width="11"
-                        height="13"
-                        rx="2"
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <rect x="8" y="4" width="12" height="14" rx="2"
                         stroke="#005BEA"
-                        stroke-width="2"
-                        stroke-linejoin="round"/>
+                        stroke-width="2"/>
 
-                    <rect
-                        x="5"
-                        y="7"
-                        width="11"
-                        height="13"
-                        rx="2"
+                    <path d="M5 8V18C5 19.1 5.9 20 7 20H15"
                         stroke="#005BEA"
-                        stroke-width="2"
-                        stroke-linejoin="round"/>
-
+                        stroke-width="2"/>
                 </svg>
 
             </div>
 
+
             <div class="login-item password">
-                <div class="login-label">Password</div>
+
+                <div class="login-label">
+                    Password
+                </div>
 
                 <div class="login-value link">
-                    <a href="https://ant.aliceblueonline.com/" class="password-link">
-
-                        <span>Set your password</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round">
-
-                            <path d="M18 8L22 12L18 16"/>
-                            <path d="M2 12H22"/>
-
-                        </svg>
-
-                    </a>
+                    Set your password →
                 </div>
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="login-buttons">
 
-        <a href="https://ant.aliceblueonline.com/" class="btn-primary">
-            Login on Web
-        </a>
+    <div class="login-right">
 
-        <a href="https://play.google.com/store/apps/details?id=com.ant2o.aliceblue&hl=en_IN" class="btn-primary">
-            Login on Mobi
-        </a>
+        <div class="secure-note">
+            Your account is secure with us
+        </div>
+
+
+        <div class="login-buttons">
+
+            <a href="https://ant.aliceblue.com/"
+               class="btn-primary">
+                Login on Web
+            </a>
+
+            <a href="#"
+               class="btn-primary">
+                Login on Mobile
+            </a>
+
+        </div>
 
     </div>
 
