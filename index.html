@@ -406,9 +406,105 @@
     font-weight:600;
 }
 
+	/* VIDEO GUIDE SECTION - ADDED */
+.video-guide-section{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:0 24px 28px;
+    padding:18px 22px;
+    background:#E3EFFF;
+    border:1px solid #D3E4FF;
+    border-radius:10px;
+    color:#26364D;
+}
+
+.video-guide-icon{
+    width:42px;
+    min-width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.video-guide-icon svg{
+    width:32px;
+    height:32px;
+    display:block;
+    stroke:#1768F5;
+}
+
+.video-guide-content{
+    flex:1;
+    min-width:0;
+    font-size:17px;
+    line-height:1.35;
+    font-weight:500;
+    color:#334155;
+}
+
+.video-guide-button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:152px;
+    height:44px;
+    padding:0 16px;
+    background:#FFFFFF;
+    border:1px solid #1768F5;
+    border-radius:4px;
+    color:#005BEA;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    white-space:nowrap;
+    box-shadow:0 3px 8px rgba(23,104,245,.16);
+    flex-shrink:0;
+}
+
+.video-guide-button:hover{
+    background:#F7FAFF;
+    text-decoration:none;
+}
+
+@media (max-width:600px){
+    .video-guide-section{
+        align-items:flex-start;
+        gap:12px;
+        margin:0 12px 20px;
+        padding:16px;
+        flex-wrap:wrap;
+    }
+
+    .video-guide-icon{
+        width:36px;
+        min-width:36px;
+        height:36px;
+    }
+
+    .video-guide-icon svg{
+        width:28px;
+        height:28px;
+    }
+
+    .video-guide-content{
+        flex:1;
+        min-width:calc(100% - 48px);
+        font-size:14px;
+    }
+
+    .video-guide-button{
+        width:100%;
+        height:44px;
+        margin-left:48px;
+    }
+}
+
   /* FEATURE GRID */
 .section{
-    padding:10px 0;
+    padding:0px 0;
 }
 
 .section-title{
@@ -1003,6 +1099,31 @@
         Alice Blue will <b>never</b> ask for your OTP, TOTP, or password via phone, SMS, or email. Never share these details with anyone.
     </span>
 </div>
+
+	  <!-- VIDEO GUIDE - ADDED -->
+    <div class="video-guide-section">
+        <span class="video-guide-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.8"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <rect x="3" y="6" width="13" height="12" rx="2"></rect>
+                <path d="M16 10l5-3v10l-5-3"></path>
+            </svg>
+        </span>
+
+        <div class="video-guide-content">
+            Looking for a quick guide? Follow the video to see how to log in and access your ANT platform.
+        </div>
+
+        <!-- Replace # below with your actual video URL -->
+        <a href="#" class="video-guide-button">
+            Watch the Guide
+        </a>
+    </div>
 
     <!-- FEATURES -->
     <div class="section">
